@@ -5,7 +5,6 @@
     var year = document.getElementById('birthdate_year');
 
     var selectElem;
-    alert('has come');
     for(var i=1;i<31;i++){
         selectElem = document.createElement('option');
         selectElem.innerHTML = i+"";
