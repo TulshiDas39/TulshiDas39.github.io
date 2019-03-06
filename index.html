@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css">
     <link rel="stylesheet" type="text/css" href="res/bootstrap-4.2.1-dist/css/bootstrap.min.css">
-    <script src="index.js"></script>
+   
 </head>
 
 <body style="background:#b3b3b3;">
@@ -73,35 +73,54 @@
             </div>
             <div class="col-md-4">
                 <p class="m-0 p-0"
-                    style="font-family:Tw Cen MT Condensed,Georgia, 'Times New Roman', Times, serif;font-size: 2em;">
+                    style="font-family:Tw Cen MT Condensed Extra Bold,Georgia, 'Times New Roman', Times, serif;font-size: 2em;">
                     Create your Lifenote</p>
                 <p class="m-0 p-0">It is free to use and always will be</p>
                 <div class="row">
                     <div class="col-md-6">
-                        <input type="text" placeholder="First Name" style="height:3em; border-radius: 0.7em;">
+                        <input type="text" placeholder="First Name" style="height:2.5em; border-radius: 0.7em;">
                     </div>
                     <div class="col-md-6">
-                        <input type="text" placeholder="Last Name" style="height:3em;border-radius: 0.7em;">
+                        <input type="text" placeholder="Surname" style="height:2.5em;border-radius: 0.7em;">
                     </div>
                 </div>
                 <div class="row border mt-1">
-                    <div class="col-md-12">
-                        <input type="text" placeholder="Mobile number or Email Address" style=" height:3em;width:100%; border-radius: 0.7em;">
+                    <div class="col-md-12 pr-0">
+                        <input type="text" placeholder="Mobile number or Email Address" style=" height:2.5em;width:100%; border-radius: 0.7em;">
                     </div>
                 </div>
 
-                <div class="row border mt-1">
-                    <div class="col-md-12">
-                        <input type="text" placeholder="New Password" style=" height:3em;width:100%; border-radius: 0.7em;">
+                <div class="row mt-1">
+                    <div class="col-md-12 pr-0">
+                        <input type="password" placeholder="New Password" style="display: inline-block; height:2.5em;width:100%; border-radius: 0.7em;">
                     </div>
                 </div>
 
-
+                <div class="row mt-3">
+                    <div class="col-md-12 pr-0">
+                        <p style="font-family:Tw Cen MT Condensed, Georgia, 'Times New Roman', Times, serif;font-size: 1.7em;">Brithday</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select id="birthdate_day">
+                            <option value="volvo" selected>Day</option>
+                         </select>
+                         <select id="birthdate_month">
+                            <option value="volvo" selected>month</option>
+                         </select>
+                         <select id="birthdate_year">
+                            <option value="volvo" selected>year</option>
+                         </select>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
 
+
+    <script src="index.js"></script>
 </body>
 
 </html>
