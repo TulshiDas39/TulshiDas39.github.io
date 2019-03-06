@@ -1,0 +1,11 @@
+body{
+    font-family:Tw Cen MT Condensed,Georgia, 'Times New Roman', Times, serif;
+    background:#b3b3b3;
+}
+
+#home_town::-webkit-input-placeholder{
+    text-align: center;
+}
+#home_town{
+    text-align: center;
+}
