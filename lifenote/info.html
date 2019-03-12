@@ -39,7 +39,7 @@
         <div class="row mt-1 ">
             <div class="col-md-4"></div>
             <div class="col-md-3 pr-0 text-center">
-                <input id="home_town" type="text" placeholder="Current Town"
+                <input id="home_town" class="center_placement" type="text" placeholder="Current Town"
                     style=" height:2.2em;width: 100%; border-radius: 0.7em;">
             </div>
         </div>
@@ -61,31 +61,78 @@
         </div>
 
         <div class="row mx-4">
-            <div class="col-md-12 border">
+            <div class="col-md-12" style="border: 2px solid blue; border-radius:1em;">
                 <div class="row">
-                    <div class="col-md-2 border">
-                        <p>Sports</p>
-                        <input type="checkbox" name="vehicle" value="Bike"> Football<br>
+                    <div class="col-md-2">
+                        <p class="text-center">Sports</p>
+                        <ul style="list-style-type:none;">
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Football<br>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike"> Cricket<br>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Hockey<br>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Badminton<br>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Video Game<br>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Indoor games<br>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Others<br>
+                            </li>
+                        </ul>
+                        <!-- <input type="checkbox" name="vehicle" value="Bike"> Football<br>
                         <input type="checkbox" name="vehicle" value="Car"> Cricket<br>
                         <input type="checkbox" name="vehicle" value="Car"> Hockey<br>
                         <input type="checkbox" name="vehicle" value="Car"> Badminton<br>
                         <input type="checkbox" name="vehicle" value="Car"> Video Games<br>
                         <input type="checkbox" name="vehicle" value="Car"> Indoor games<br>
-                        <input type="checkbox" name="vehicle" value="Car"> Others<br>
+                        <input type="checkbox" name="vehicle" value="Car"> Others<br> -->
                     </div>
-                    <div class="col-md-2 border">
-                        <p>Movies</p>
-                        <input type="checkbox" name="vehicle" value="Bike"> Romantic<br>
+                    <div class="col-md-2">
+                        <p class="text-center">Movies</p>
+                        <ul class="pl-2" style="list-style-type:none; border-left:1px solid blue;">
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Romantic
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike"> Horror
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Tragedy
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Sci Fi
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Adventure
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Comedy
+                            </li>
+                            <li>
+                                <input type="checkbox" name="vehicle" value="Bike">Drama
+                            </li>
+                        </ul>
+
+                        <!-- <input type="checkbox" name="vehicle" value="Bike"> Romantic<br>
                         <input type="checkbox" name="vehicle" value="Car"> Horror<br>
                         <input type="checkbox" name="vehicle" value="Car"> Tragedy<br>
                         <input type="checkbox" name="vehicle" value="Car"> Sci Fi<br>
                         <input type="checkbox" name="vehicle" value="Car"> Adventure<br>
                         <input type="checkbox" name="vehicle" value="Car"> Comedy<br>
-                        <input type="checkbox" name="vehicle" value="Car"> Drama<br>
+                        <input type="checkbox" name="vehicle" value="Car"> Drama<br> -->
                     </div>
-                    <div class="col-md-2 border">
-                        <p>Foods</p>
-                        <ul class="border pl-0" style="list-style-type:none;">
+                    <div class="col-md-2 ">
+                        <p class="text-center">Foods</p>
+                        <ul class="pl-2" style="list-style-type:none;border-left:1px solid blue;">
                             <li>
                                 <input type="checkbox" name="vehicle" value="Bike"> Home made<br>
                             </li>
@@ -105,11 +152,112 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 border">
-                        <p>Fashions</p>
+                    <div class="col-md-3">
+                        <p class="text-center">Fashions</p>
+                        <ul class= pl-0" style="list-style-type:none;border-left:1px solid blue;">
+                            <li>
+                                <div class="row bl-0">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Watch
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Cop
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row bl-0">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> T-shirt
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Sunglass
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row bl-0">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Shirt
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Hijab
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row bl-0">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Shoes
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Jewelry
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row bl-0">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Shari
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Pants
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Tops
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Under
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> Panjabi
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="checkbox" name="vehicle" value="Bike"> garments
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-2 border">
-                        <p>Others</p>
+                    <div class="col-md-3 ">
+                        <p class="text-center">Others</p>
+                        <ul style="list-style-type:none;border-left: 1px solid blue;">
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Mobile Phone
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Audio devices
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Camera
+                                </li> 
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Mobile accessories
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Home appliance
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Computer accessories
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Cosmetics
+                                </li>
+
+                                <li>
+                                    <input type="checkbox" name="vehicle" value="Bike"> Machineries
+                                </li>
+                            </ul>
                     </div>
                 </div>
 
