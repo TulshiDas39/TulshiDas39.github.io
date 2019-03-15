@@ -1,0 +1,12 @@
+@font-face { 
+    font-family: selfish; 
+    src: local("selfish"), url('res/custom_fonts/steelfish-rounded/steelfish\ rounded\ bd.ttf'); 
+}
+@font-face { 
+    font-family: new-fobia; 
+    src: url('res/custom_fonts/neo-fobia/NeoFobia-Bold.ttf'); 
+}
+
+.hover-gray:hover{
+    background: #c2c2a3;
+}
