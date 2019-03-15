@@ -4,3 +4,7 @@
 .center_placement{
     text-align: center;
 }
+
+.hover-gray:hover{
+    background: #c2c2a3;
+}

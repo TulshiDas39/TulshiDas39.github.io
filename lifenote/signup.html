@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lifenote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css">
+    <link rel="stylesheet" type="text/css" href="res/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+   
+</head>
+
+<body style="background:#b3b3b3;">
+    <div class="container-fluid" style="height:7em;background: green;">
+        <div class="row" style="height:100%;">
+            <div class="col-md-7">
+                <p class="text-light ml-5 mt-2" style="
+                 font-family: Tw Cen MT Condensed Extra Bold,Georgia, 'Times New Roman', Times, serif;font-size: 3em;">
+                    Lifenote</p>
+            </div>
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-5 ">
+                        <p class="mb-0"
+                            style="margin-top:1em; font-family:Tw Cen MT Condensed,Georgia, 'Times New Roman', Times, serif">
+                            Email
+                            or phone</p>
+                        <input type="text" class="small">
+                    </div>
+                    <div class="col-md-5">
+                        <p class="mb-0"
+                            style="margin-top:1em; font-family:Tw Cen MT Condensed,Georgia, 'Times New Roman', Times, serif">
+                            Password</p>
+                        <input type="password" class="small">
+                    </div>
+                    <div class="col-md-2">
+                        <div class="p-0" style="height:100%;position: relative;">
+                            <p id="login_btn" class="border my-0 px-2 text-center text-light" style="position:absolute; bottom:0;font-family:
+                                Tw Cen MT Condensed,Georgia, 'Times New Roman', Times, serif;">Log in</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-7 border">
+                <div class="border" style="height:15em;width:80%;margin:auto;">
+                    <p style="left: 45%; position:absolute;top:45%;">Slide show</p>
+                </div>
+                <div class="border mt-3" style="height:6em;width:80%;margin:auto;">
+                    <div class="row border mx-0" style="height:100%;">
+                        <div class="col-md-3 border">
+
+                        </div>
+                        <div class="col-md-3 border">
+
+                        </div>
+                        <div class="col-md-3 border">
+
+                        </div>
+                        <div class="col-md-3 border">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <p class="m-0 p-0"
+                    style="font-family:Tw Cen MT Condensed Extra Bold,Georgia, 'Times New Roman', Times, serif;font-size: 2em;">
+                    Create your Lifenote</p>
+                <p class="m-0 p-0">It is free to use and always will be</p>
+                <div class="row border">
+                    <div class="col-md-6 pr-1">
+                        <input type="text" placeholder="First Name" style="width: 100%; height:2.5em; border-radius: 0.7em;">
+                    </div>
+                    <div class="col-md-6 pl-1 pr-0">
+                        <input type="text" placeholder="Surname" style="width: 100%; height:2.5em;border-radius: 0.7em;">
+                    </div>
+                </div>
+                <div class="row border mt-1">
+                    <div class="col-md-12 pr-0">
+                        <input type="text" placeholder="Mobile number or Email Address" style=" height:2.5em;width:100%; border-radius: 0.7em;">
+                    </div>
+                </div>
+
+                <div class="row mt-1">
+                    <div class="col-md-12 pr-0">
+                        <input type="password" placeholder="New Password" style="display: inline-block; height:2.5em;width:100%; border-radius: 0.7em;">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col-md-12 pr-0 py-0">
+                        <p class="my-0" style="font-family:Tw Cen MT Condensed, Georgia, 'Times New Roman', Times, serif;font-size: 1.7em;">Brithday</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 py-0">
+                        <select id="birthdate_day">
+                            <option value="volvo" selected>Day</option>
+                         </select>
+                         <select id="birthdate_month">
+                            <option value="volvo" selected>month</option>
+                         </select>
+                         <select id="birthdate_year">
+                            <option value="volvo" selected>year</option>
+                         </select>
+                    </div>
+
+                    <div class="col-md-6 py-0">
+                        <p class="small"> <a href="#">Why should I provide that?</a></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 pr-0">
+                        <input type="radio" name="gender" value="male"> Male
+                        
+                    </div>
+                    <div class="col-md-3 pl-0">
+                        <input type="radio" name="gender" value="female"> Female
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 small">
+                        <p>By clicking Sign Up, you agree to our <a href="#">Terms</a> , <a href="">Data Policy</a> 
+                            and <a href="">Cookie Policy</a> . You may receive SMS notifications from us
+                            and can opt out at any time.
+                            </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button style="background:green">Sign Up</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
