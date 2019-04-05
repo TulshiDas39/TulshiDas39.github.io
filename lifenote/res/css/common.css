@@ -1,0 +1,42 @@
+#downloadBtn:hover{
+    background-color: #e8e3e3;
+}
+
+#folderIcon{
+    font-size: 32px;
+    color: green;
+}
+#folderIcon:hover{
+    font-size: 36px;
+    color: brown;
+}
+
+#updateBtn:hover{
+    background: chocolate;
+    cursor:pointer;
+}
+
+#closeIcon:hover{
+    background-color: chocolate;
+    cursor:pointer;
+}
+
+.site-brackgroun{
+    background:#008000;
+}
+
+.site-color{
+    color:#008000;
+}
+
+body{
+    margin: 0;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+p{
+    margin: 0;
+}
