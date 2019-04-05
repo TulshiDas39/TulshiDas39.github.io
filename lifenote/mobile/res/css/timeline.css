@@ -3,4 +3,36 @@
 }
 #user{
     padding: 0.6em 0;
+    margin-left: 32%;
+}
+#cover{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+#cover-photo{
+    width: 100%;
+    height: 10em;
+    margin: 0;
+}
+
+#edit-cover{
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    background: #f2f2f2;
+    border-top-left-radius:0.2em;
+    border: none;
+    height: 2em;
+    width: 6em;
+}
+
+#profile-img{
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    bottom: -2em;
+    left: 40%;
+    border:1px solid white;
 }
