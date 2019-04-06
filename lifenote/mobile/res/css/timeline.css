@@ -59,3 +59,31 @@
     margin: 1em auto;
     padding: 0.6em;
 }
+
+/* #update-info, #activity-log,#more{
+    display: inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
+    background: gray;
+} */
+
+.activity div{
+    display: inline-block;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
+    background: lightgray;
+}
+
+#update-info{
+    border-radius: 50%;
+}
+
+#activity-log{
+    border-radius: 50%;
+}
+
+#more{
+    padding: 0.6em;
+    border-radius: 50%;
+}
+   
