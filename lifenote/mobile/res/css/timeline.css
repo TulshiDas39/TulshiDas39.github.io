@@ -29,10 +29,33 @@
 }
 
 #profile-img{
+    height: 6em;
+    width: 6em;
+    border:1px solid white;
+}
+#profile-div{
     position: absolute;
-    height: 5em;
-    width: 5em;
     bottom: -2em;
     left: 40%;
-    border:1px solid white;
+ 
+}
+
+#edit-profile{
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+    background: #f2f2f2;
+    border-top-left-radius:0.2em;
+    border: none;
+    height: 1.9em;
+    width: 5em;
+}
+
+#btn-bio {
+    display: block;
+    border: none;
+    width: 90%;
+    text-align: center;
+    margin: 1em auto;
+    padding: 0.6em;
 }
