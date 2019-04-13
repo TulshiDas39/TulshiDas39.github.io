@@ -1,3 +1,7 @@
-.nav{
-    color: white;
+#nav{
+    /* color: white; */
+}
+
+#nav > span{
+    display: inline-block;
 }
