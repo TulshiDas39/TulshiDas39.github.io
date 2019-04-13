@@ -7,7 +7,7 @@ var readyStateCheckInterval = setInterval(function () {
 
         var path = document.location.href;
         //(path);
-        var file = path.substring(0, path.lastIndexOf('/'))+"/languages.csv";
+        var file = path.substring(0, path.lastIndexOf('/'))+"/res/languages.csv";
         //alert(file);
         readTextFile(file);
         //alert(languages);
