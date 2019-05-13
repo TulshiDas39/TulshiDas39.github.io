@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+        
+        a {
+            background-color: transparent;
+        }
+        
+        *,
+         ::after,
+         ::before {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        .col-lg-1,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-md-1,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-xs-1,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9 {
+            position: relative;
+            min-height: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .col-xs-1,
+        .col-xs-10,
+        .col-xs-11,
+        .col-xs-12,
+        .col-xs-2,
+        .col-xs-3,
+        .col-xs-4,
+        .col-xs-5,
+        .col-xs-6,
+        .col-xs-7,
+        .col-xs-8,
+        .col-xs-9 {
+            float: left;
+        }
+        
+        .col-xs-6 {
+            width: 50%;
+        }
+        /* @media all and (min-width:768px) */
+        
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9 {
+            float: left;
+        }
+        /* @media all and (min-width:768px) */
+        
+        .col-sm-6 {
+            width: 50%;
+        }
+        
+        .row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        /* @media all and (min-width:768px) */
+        
+        .container {
+            width: 740px;
+        }
+        
+        .w-box {
+            background-color: #fff;
+            padding: 70px 0;
+        }
+        
+        .w-box.bottom {
+            background-color: #fff;
+            padding: 40px 0;
+        }
+        
+        body {
+            font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.4285;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        body {
+            margin-bottom: 165px;
+        }
+        
+        body {
+            margin: 0;
+        }
+        
+        .page-about,
+        .page-companies,
+         :not(.v2).page-index,
+        .page-individuals,
+        .page-integration-landing,
+        .page-landing,
+        .page-management-test,
+        .page-management-test-complete,
+        .page-press,
+        .page-webinars {
+            background-clip: border-box;
+            background-color: transparent;
+            background-image: url("/images/header2.jpg?189a32bd4ed5391b31c40c8ccbf28d24");
+            background-origin: padding-box;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+        }
+        
+        .page-about,
+        .page-companies,
+         :not(.v2).page-index,
+        .page-individuals,
+        .page-management-test,
+        .page-management-test-complete,
+        .page-press {
+            background: none;
+        }
+        
+        html {
+            font-size: 10px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html {
+            min-height: 100%;
+            position: relative;
+        }
+        
+        ol,
+        ul {
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
+        
+        .nav {
+            margin-bottom: 0px;
+            padding-left: 0px;
+            list-style: none;
+        }
+        
+        a {
+            color: #5fb92a;
+            text-decoration: none;
+        }
+        
+        .nav>li,
+        .nav>li>a {
+            position: relative;
+            display: block;
+        }
+        
+        .nav-stacked>li {
+            float: none;
+        }
+        
+        .nav-stacked>li+li {
+            margin-top: 2px;
+            margin-left: 0px;
+        }
+        
+        .nav>li>a {
+            padding: 10px 15px;
+        }
+        
+        .w-box.bottom .nav-stacked>li a {
+            color: #404751;
+            font: 400 16px/1.63 Geogrotesque, sans-serif;
+            padding: 0;
+        }
+        
+        .label {
+            display: inline;
+            padding: .2em .6em .3em;
+            font-size: 75%;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: .25em;
+        }
+        
+        .label-danger {
+            background-color: #d9534f;
+        }
+        
+        .w-box.bottom .nav-stacked>li.nav-header a {
+            color: #404751;
+            cursor: default;
+            font: 600 16px/1.63 Geogrotesque, sans-serif;
+            margin: 0 0 16px;
+        }
+        
+        .sb {
+            line-height: 1;
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            text-indent: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 0.5em;
+            -webkit-transition: all .3s ease 0s;
+            transition: all .3s ease 0s;
+            opacity: 1;
+        }
+        
+        a.android span {
+            width: 72px;
+            height: 24px;
+            background: url(/assets/img/google-play.png);
+            background-size: 72px 24px;
+        }
+        
+        a.iphone span {
+            width: 72px;
+            height: 24px;
+            background: url(/assets/img/app-store.png);
+            background-size: 72px 24px;
+        }
+        
+        .logo-gray {
+            background: url(/images/logo_gray.png?74efa6808b6ff454fa3bd4d77350ac9d) no-repeat scroll 0 0 transparent;
+            display: inline-block;
+            height: 22px;
+            width: 109px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body class="page-index">
+    <div id="bottom">
+        <div class="w-box bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <ul class="nav nav-stacked">
+                                    <li class="nav-header"><a href="https://desktime.com"><span class="logo-gray"></span></a></li>
+                                    <li><a href="https://desktime.com/support">Contact Us</a></li>
+                                    <li><a href="https://desktime.com/terms">Terms</a></li>
+                                    <li><a href="https://desktime.com/privacy">Privacy</a></li>
+                                    <li><a href="https://desktime.com/cookies">Cookie Policy</a></li>
+                                    <li><a href="https://desktime.com/download">Download</a></li>
+                                    <li>&nbsp;</li>
+                                    <li>
+                                        <a class="iphone" style="display: inline-block;" href="https://itunes.apple.com/us/app/desktime-for-iphone/id452994124?mt=8">
+                                            <span class="sb"></span>
+                                        </a>
+                                        <a class="android" style="display: inline-block;" href="https://play.google.com/store/apps/details?id=desktime.main">
+                                            <span class="sb"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <ul class="nav nav-stacked">
+                                    <li class="nav-header"><a>Learn more</a></li>
+                                    <li><a href="https://desktime.com/employee-time-tracking-guide">Employee time tracking</a></li>
+                                    <li><a href="https://desktime.com/best-employee-time-tracking-software">Best time tracking apps</a></li>
+                                    <li><a href="https://desktime.com/employee-time-tracking-software-for-companies">DeskTime for Companies</a></li>
+                                    <li><a href="https://desktime.com/time-tracking-for-freelancers">DeskTime for Freelancers</a></li>
+                                    <li><a href="https://desktime.com/faq">FAQ</a></li>
+                                    <li><a href="/case-studies">Case Studies<span class="label label-danger" style="font-size:8px;margin-left:5px;vertical-align:middle;">NEW</span></a></li>
+                                    <!--
+                            <li><a href="https://desktime.com/webinars">Webinars</a></li>
+                            <li><a href="https://desktime.com/feature-requests">Feature Requests</a></li>
+                            -->
+                                    <li><a href="https://desktime.com/affiliate">Affiliate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
