@@ -26,11 +26,9 @@ npm run dev       # http://localhost:3000
 | Script | Does |
 |---|---|
 | `npm run dev` | Dev server with Turbopack |
-| `npm run build` | Static export to `out/` |
+| `npm run build` | Static export → `docs/` (see below) |
 | `npm run lint` | ESLint — see the note below |
 | `npm run typecheck` | `tsc --noEmit` |
-| `npm run static` | Build, then add `.nojekyll` and `CNAME` |
-| `npm run deploy` | `npm run static`, then publish `out/` with `gh-pages` |
 
 ### A note on `npm run lint`
 
@@ -41,8 +39,7 @@ Dependencies are pinned to the newest published versions, which currently puts
 - `eslint-plugin-react`, bundled inside `eslint-config-next`, fails to load under ESLint 10.
 
 So `npm run lint` exits with an error for now. **`npm run build` and `npm run typecheck`
-are unaffected, and CI only runs the build**, so deployments are fine. The code was
-linted clean before the upgrade.
+are unaffected**, so publishing is fine. The code was linted clean before the upgrade.
 
 To get linting back, pin the two packages down a major:
 
@@ -83,14 +80,50 @@ new PDF over that file — or point `profile.resumeFile` somewhere else.
 
 ```
 app/
-  layout.tsx      Fonts, metadata, schema.org Person JSON-LD
-  page.tsx        Section composition
-  globals.css     Tailwind v4 theme tokens + component classes
-components/       One component per section, plus Nav / Backdrop / Reveal
-data/resume.ts    All content
+  layout.tsx        Fonts, metadata, schema.org Person JSON-LD
+  page.tsx          Section composition
+  globals.css       Tailwind v4 theme tokens + component classes
+components/         One component per section, plus Nav / Backdrop / Reveal
+data/resume.ts      All content
+scripts/
+  postbuild.mjs     Moves the export to docs/ and writes .nojekyll
+docs/               The built site — committed, served by GitHub Pages
 ```
 
 ## Deployment
 
-Pushing to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml),
-which builds the static export and publishes it to GitHub Pages.
+The site is served by GitHub Pages straight from the repo:
+**Settings → Pages → Deploy from a branch → `main` / `/docs`.**
+
+That means **`docs/` is build output that is deliberately committed.** To publish:
+
+```bash
+npm run build          # writes docs/
+git add docs
+git commit -m "build: publish site"
+git push
+```
+
+GitHub serves the new commit within a minute or so.
+
+### How the build lands in `docs/`
+
+`next build` with `output: "export"` always writes to `out/`. The `postbuild` script
+(run automatically by npm after `build`) replaces `docs/` with that export and adds a
+`.nojekyll` file.
+
+Two details worth knowing before changing this:
+
+- **`distDir` stays at its default `.next`.** It is also where `next dev` writes, so
+  pointing it at `docs/` would fill the committed folder with dev-server artifacts.
+  `out/` remains gitignored as the throwaway intermediate.
+- **`.nojekyll` is load-bearing.** Branch-served Pages content is run through Jekyll,
+  which skips directories starting with an underscore — without it the entire `_next/`
+  folder is dropped and the site renders unstyled and inert.
+
+### CI
+
+[`.github/workflows/build.yml`](.github/workflows/build.yml) type-checks and builds on
+every push and PR, and warns if `docs/` was not rebuilt alongside the source. It does
+**not** deploy — with a branch-based Pages source, an `actions/deploy-pages` job would
+fail, because that action requires the Pages source to be set to "GitHub Actions".
