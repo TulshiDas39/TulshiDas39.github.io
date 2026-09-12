@@ -57,7 +57,7 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
       - name: Restore cache
         uses: actions/cache@v4
@@ -78,6 +78,9 @@ jobs:
 
       - name: Ensure output directory exists
         run: mkdir -p ./out
+
+      - name: Disable Jekyll processing
+        run: touch ./out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

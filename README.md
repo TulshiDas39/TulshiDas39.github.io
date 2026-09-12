@@ -1,41 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# tulshidas39.github.io
 
-## Getting Started
+Personal portfolio of **Tulshi Chandra Das** — Principal Software Engineer (.NET).
 
-First, run the development server:
+Live at <https://tulshidas39.github.io/>.
+
+## Stack
+
+| | |
+|---|---|
+| Framework | Next.js 16 (App Router, static export, Turbopack) |
+| UI | React 19, Tailwind CSS 4 |
+| Motion | Motion (`motion/react`) |
+| Icons | lucide-react, react-icons |
+| Hosting | GitHub Pages via GitHub Actions |
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev       # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script | Does |
+|---|---|
+| `npm run dev` | Dev server with Turbopack |
+| `npm run build` | Static export to `out/` |
+| `npm run lint` | ESLint — see the note below |
+| `npm run typecheck` | `tsc --noEmit` |
+| `npm run static` | Build, then add `.nojekyll` and `CNAME` |
+| `npm run deploy` | `npm run static`, then publish `out/` with `gh-pages` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### A note on `npm run lint`
 
-## Learn More
+Dependencies are pinned to the newest published versions, which currently puts
+`typescript@7` and `eslint@10` ahead of what the Next.js lint stack supports:
 
-To learn more about Next.js, take a look at the following resources:
+- `typescript-eslint` does not yet support the TypeScript 7 API ([tracking issue](https://github.com/typescript-eslint/typescript-eslint/issues/10940)).
+- `eslint-plugin-react`, bundled inside `eslint-config-next`, fails to load under ESLint 10.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+So `npm run lint` exits with an error for now. **`npm run build` and `npm run typecheck`
+are unaffected, and CI only runs the build**, so deployments are fine. The code was
+linted clean before the upgrade.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To get linting back, pin the two packages down a major:
 
-## Deploy on Vercel
+```bash
+npm install -D typescript@^5.9.3 eslint@^9.39.5
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Once `typescript-eslint` ships TS 7 support, drop the pins again.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Editing the content
 
+**All site content lives in [`data/resume.ts`](data/resume.ts).** Nothing is hard-coded
+in the components, so updating the résumé means editing that one file — profile,
+social links, stats, experience, projects, skills, credentials and education.
 
-## Credits
-This portfolio website was inspired by [Build and Deploy a Portfolio Website Using Next JS, Tailwind CSS & Framer Motion] by [Cristian Mihai].  
-You can find the original tutorial [here](https://www.youtube.com/watch?v=dImgZ_AH7uA).
+Every external URL (socials, project sites, certificate and paper links) was taken
+from the link annotations embedded in `Tulshi_Chandra_Das_Resume.Net.pdf`, so they
+match the résumé exactly.
+
+### Adding a profile photo
+
+The hero falls back to a `TD` monogram. To use a photo instead, drop a square image at
+`public/assets/profile.jpg` and set:
+
+```ts
+photo: "/assets/profile.jpg",
+```
+
+in the `profile` object.
+
+### Résumé download
+
+The **Download résumé** buttons serve `public/assets/Tulshi_Chandra_Das_Resume.pdf`
+(a copy of `Tulshi_Chandra_Das_Resume.Net.pdf` in the repo root). To update it, drop a
+new PDF over that file — or point `profile.resumeFile` somewhere else.
+
+## Structure
+
+```
+app/
+  layout.tsx      Fonts, metadata, schema.org Person JSON-LD
+  page.tsx        Section composition
+  globals.css     Tailwind v4 theme tokens + component classes
+components/       One component per section, plus Nav / Backdrop / Reveal
+data/resume.ts    All content
+```
+
+## Deployment
+
+Pushing to `main` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml),
+which builds the static export and publishes it to GitHub Pages.
