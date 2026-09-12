@@ -6,8 +6,7 @@ export default function Footer() {
     <footer className="border-t border-line py-10">
       <div className="shell flex flex-col items-center justify-between gap-5 sm:flex-row">
         <p className="font-mono text-[11.5px] text-fg-faint">
-          © {new Date().getFullYear()} {profile.name} · Built with Next.js and
-          Tailwind CSS
+          © {new Date().getFullYear()} {profile.name}
         </p>
 
         <a
