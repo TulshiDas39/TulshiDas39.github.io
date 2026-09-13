@@ -129,7 +129,7 @@ export const projects: Project[] = [
     linkLabel: "lithiumgit.com",
     description:
       "A clean, fast Git client that makes everyday version-control tasks simple and visual. The interactive graph explains history at a glance — inspect any commit and run merge, rebase, cherry-pick or branch creation right in context. Origin-independent: it works with GitHub, GitLab, Bitbucket, Gerrit or any other Git remote, and uses the Git you already have installed. No registration, no sign-in. Free to use.",
-    tags: ["Electron", "React", "TypeScript", "Node.js", "Free to use"],
+    tags: ["Electron", "React", "TypeScript", "Free to use"],
     featured: true,
   },
   {
@@ -140,7 +140,7 @@ export const projects: Project[] = [
     linkLabel: "myhome-aspire.proexcel.com.ph",
     description:
       "A service maintenance system for residents featuring thousands of houses and properties to rent, parking, and amenities booking with custom service management.",
-    tags: ["ASP.NET Core", "MSSQL", "React", "Azure"],
+    tags: ["ASP.NET Core", "MVC", "MongoDB", "Azure"],
   },
   {
     name: "FEIM",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     status: "In development",
     description:
       "An asset management system enabling maintainers of the assets to handle an asset’s physical state, acquisition information, pricing, repairing, and configuring maintenance workflow for engineers.",
-    tags: ["ASP.NET Core", "Entity Framework", "MSSQL", "TypeScript"],
+    tags: ["ASP.NET Core", "MVC", "Entity Framework", "MSSQL"],
   },
   {
     name: "NRW",
@@ -171,7 +171,7 @@ export const projects: Project[] = [
     linkLabel: null,
     description:
       "Bridge Inspection System — a Windows application running on engineers’ tablets that manages faults of bridges, pairing captured images with detailed inspection information.",
-    tags: ["C#", "WinForms", "MSSQL", "Field tooling"],
+    tags: ["C#", "WinForms", "SQLite", "Field tooling"],
   },
   {
     name: "Reganalytics",
@@ -181,7 +181,7 @@ export const projects: Project[] = [
     linkLabel: "reganalytics.com",
     description:
       "A compliance platform providing real-time updates on global trade regulations. Upgraded its technology and framework for a measurable performance improvement across the application.",
-    tags: ["ASP.NET Core", "Angular", "MSSQL", "AWS"],
+    tags: ["ASP.NET Core", "React", "MSSQL", "AWS"],
   },
   {
     name: "WebEvv",
@@ -191,7 +191,7 @@ export const projects: Project[] = [
     linkLabel: "webevv.com",
     description:
       "A cloud-based EVV platform with real-time tracking and automated workflows, raising operational efficiency for care providers.",
-    tags: ["ASP.NET Core", "React", "AWS", "NoSQL"],
+    tags: ["ASP.NET Core", "React", "AWS", "DynamoDB"],
   },
   {
     name: "Devensoft",
@@ -201,7 +201,7 @@ export const projects: Project[] = [
     linkLabel: "devensoft.com",
     description:
       "A merger and acquisition platform serving millions of users with seamless and reliable services.",
-    tags: ["C#", "ASP.NET", "MSSQL", "TypeScript"],
+    tags: ["C#", "ASP.NET", "MVC", "MSSQL"],
   },
   {
     name: "P1ston",
@@ -211,7 +211,7 @@ export const projects: Project[] = [
     linkLabel: "p1ston.com",
     description:
       "A supply chain workflow solution whose scalable ERP module enables automated purchase order management, real-time supplier coordination, and complete supply chain traceability.",
-    tags: ["Node.js", "TypeScript", "React", "AWS"],
+    tags: ["ASP.NET Core", "TypeScript", "React", "AWS", "DynamoDB"],
   },
   {
     name: "Intellifriend",
