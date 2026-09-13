@@ -303,6 +303,7 @@ export const skillGroups: SkillGroup[] = [
     icon: "sparkles",
     items: [
       "GitHub Copilot",
+      "Claude Code",
       "ChatGPT",
       "AI Prompt Engineering",
       "Google Gemini AI",
