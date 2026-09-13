@@ -14,8 +14,8 @@ export const profile = {
   location: "Dhaka, Bangladesh",
   email: "tulshidas37@gmail.com",
   phone: "+880 1580614567",
-  /** Drop a square photo at public/assets/profile.jpg and set this to that path. */
-  photo: null as string | null,
+  /** Square portrait; the hero falls back to an initials monogram if null. */
+  photo: "/assets/profile.jpg" as string | null,
   resumeFile: "/assets/Tulshi_Chandra_Das_Resume.pdf",
   summary:
     "Senior .NET Developer and AI Innovator with 6+ years of experience delivering scalable enterprise applications. Proficient in ASP.NET Core, Entity Framework, and MSSQL, with emerging expertise in AI integration as a productivity tool. Adept at full stack development, mentoring developers, and driving digital transformations through both traditional and AI-powered solutions. Passionate about building cutting-edge, user-centric, robust software solutions for dynamic industries.",
