@@ -3,13 +3,7 @@ import typescriptConfig from "eslint-config-next/typescript";
 
 const eslintConfig = [
   {
-    ignores: [
-      ".next/**",
-      "out/**",
-      "docs/**",
-      "node_modules/**",
-      "next-env.d.ts",
-    ],
+    ignores: [".next/**", "docs/**", "node_modules/**", "next-env.d.ts"],
   },
   ...coreWebVitals,
   ...typescriptConfig,
