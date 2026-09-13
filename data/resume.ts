@@ -128,8 +128,8 @@ export const projects: Project[] = [
     link: "https://lithiumgit.com",
     linkLabel: "lithiumgit.com",
     description:
-      "A clean, fast Git client that makes everyday version-control tasks simple and visual. The interactive graph explains history at a glance — inspect any commit and run merge, rebase, cherry-pick or branch creation right in context. Origin-independent: it works with GitHub, GitLab, Bitbucket, Gerrit or any other Git remote, and uses the Git you already have installed. No registration, no sign-in. Free and open source.",
-    tags: ["Electron", "React", "TypeScript", "Node.js", "Open source"],
+      "A clean, fast Git client that makes everyday version-control tasks simple and visual. The interactive graph explains history at a glance — inspect any commit and run merge, rebase, cherry-pick or branch creation right in context. Origin-independent: it works with GitHub, GitLab, Bitbucket, Gerrit or any other Git remote, and uses the Git you already have installed. No registration, no sign-in. Free to use.",
+    tags: ["Electron", "React", "TypeScript", "Node.js", "Free to use"],
     featured: true,
   },
   {
@@ -248,12 +248,18 @@ export const skillGroups: SkillGroup[] = [
   {
     title: "Frameworks",
     icon: "layers",
-    items: ["ASP.NET Core", "ASP.NET MVC", "Blazor", "NodeJS (NestJS)"],
+    items: [
+      "ASP.NET Core",
+      "ASP.NET MVC",
+      "Blazor",
+      "NodeJS (NestJS)",
+      "Electron JS",
+    ],
   },
   {
     title: "Front-End Technologies",
     icon: "monitor",
-    items: ["React", "Angular", "Electron JS", "Redux", "Bootstrap"],
+    items: ["React", "Angular", "Redux", "Bootstrap"],
   },
   {
     title: "Architectures & Patterns",

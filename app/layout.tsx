@@ -61,7 +61,19 @@ export const metadata: Metadata = {
     title: `${profile.name} — ${profile.role}`,
     description,
   },
-  robots: { index: true, follow: true },
+  // The site is deliberately kept out of search results. This emits
+  // <meta name="robots" content="noindex, nofollow"> alongside the
+  // Disallow rules in app/robots.ts.
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
 };
 
 export const viewport: Viewport = {
