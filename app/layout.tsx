@@ -26,7 +26,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 const siteUrl = "https://tulshidas39.github.io";
-const description = `${profile.role} in ${profile.location} with 6+ years building scalable enterprise applications on ASP.NET Core, MSSQL, AWS and Azure.`;
+const description = `${profile.role} in ${profile.location} building cross-platform desktop apps in Electron.js and TypeScript, backed by 6+ years of enterprise .NET, AWS and Azure platform work.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -37,6 +37,10 @@ export const metadata: Metadata = {
   description,
   keywords: [
     profile.name,
+    "Electron.js developer",
+    "cross-platform desktop apps",
+    "TypeScript",
+    "Node.js",
     ".NET developer",
     "ASP.NET Core",
     "C#",

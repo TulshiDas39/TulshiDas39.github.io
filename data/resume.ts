@@ -3,14 +3,17 @@
  *
  * Sourced from Tulshi_Chandra_Das_Resume.Net.docx; every external URL comes
  * from the link annotations embedded in Tulshi_Chandra_Das_Resume.Net.pdf.
+ *
+ * The desktop/Electron details (packaging targets, auto-update) come from the
+ * published LithiumGit release assets rather than the résumé.
  */
 
 export const profile = {
   name: "Tulshi Chandra Das",
   shortName: "Tulshi Das",
   initials: "TD",
-  role: "Principal Software Engineer (.NET)",
-  tagline: "Full-Stack & Cloud Solutions Expert",
+  role: "Principal Software Engineer",
+  tagline: "Cross-Platform Desktop & Full-Stack Engineering",
   location: "Dhaka, Bangladesh",
   email: "tulshidas37@gmail.com",
   phone: "+880 1580614567",
@@ -18,9 +21,9 @@ export const profile = {
   photo: "/assets/profile.jpg" as string | null,
   resumeFile: "/assets/Tulshi_Chandra_Das_Resume.pdf",
   summary:
-    "Senior .NET Developer and AI Innovator with 6+ years of experience delivering scalable enterprise applications. Proficient in ASP.NET Core, Entity Framework, and MSSQL, with emerging expertise in AI integration as a productivity tool. Adept at full stack development, mentoring developers, and driving digital transformations through both traditional and AI-powered solutions. Passionate about building cutting-edge, user-centric, robust software solutions for dynamic industries.",
+    "Principal Software Engineer with 6+ years of production experience, focused on cross-platform desktop applications built with Electron.js, TypeScript and Node.js. Author of LithiumGit, a publicly released Electron Git client that ships installers and differential auto-updates to Windows, macOS and Linux from a single codebase. That desktop work sits on top of six years of enterprise platform engineering — ASP.NET Core, MSSQL, AWS and Azure — across asset management, property, compliance and supply-chain systems used at scale.",
   languages: [
-    { label: "English", value: "Medium Fluent" },
+    { label: "English", value: "Professional working" },
     { label: "Bengali", value: "Native" },
   ],
 };
@@ -35,7 +38,7 @@ export const socials = {
 export const stats = [
   { value: 6, suffix: "+", label: "Years of experience" },
   { value: 10, suffix: "", label: "Products shipped" },
-  { value: 40, suffix: "+", label: "Technologies used" },
+  { value: 3, suffix: "", label: "Desktop platforms shipped" },
   { value: 1, suffix: "", label: "Published paper" },
 ];
 
@@ -55,17 +58,18 @@ export const experience: Experience[] = [
     location: "Dhaka, Bangladesh",
     period: "September 2023 — Present",
     stack: [
+      "TypeScript",
+      "React",
+      "WinForms",
       "C#",
       "ASP.NET Core",
       "Entity Framework",
       "MSSQL",
-      "TypeScript",
-      "React",
-      "WinForms",
       "Azure",
       "Docker",
     ],
     highlights: [
+      "Building BIS, a Windows desktop application that runs on engineers’ tablets in the field, managing bridge fault records and pairing captured images with detailed inspection data.",
       "Leading the development of FEIM, an asset management system enabling maintainers of the assets to handle an asset’s physical state, acquisition information, pricing, repairing, and configuring maintenance workflow for engineers.",
       "Customizing and maintaining MyHome, a property portal featuring thousands of houses and properties to rent, parking, amenities booking with custom service management for users (service requestors) and property administrators.",
       "Maintaining IMPORTs, an enterprise property and project management system providing comprehensive CRUD operations, Excel import processing, and role-based access control across multiple entities (projects, properties, tenants, contracts, parking).",
@@ -100,10 +104,10 @@ export const experience: Experience[] = [
     role: "Internship Trainee",
     location: "Dhaka, Bangladesh",
     period: "January 2019 — June 2019",
-    stack: ["C#", "JavaScript", "ElectronJS", "AngularJS"],
+    stack: ["Electron.js", "JavaScript", "AngularJS", "C#"],
     highlights: [
-      "Learned, built and maintained features for desktop and web applications, focusing on gaining hands-on experience in real life software solutions.",
-      "Collaborated with senior engineers to build scalable solutions for real-time activity monitoring at computer devices.",
+      "Built and maintained features for cross-platform desktop and web applications, working primarily in Electron.js and JavaScript.",
+      "Collaborated with senior engineers on Intellifriend, a real-time activity monitoring agent covering background execution and system-level capture of user interaction on Windows, Linux and macOS.",
     ],
   },
 ];
@@ -128,9 +132,36 @@ export const projects: Project[] = [
     link: "https://lithiumgit.com",
     linkLabel: "lithiumgit.com",
     description:
-      "A clean, fast Git client that makes everyday version-control tasks simple and visual. The interactive graph explains history at a glance — inspect any commit and run merge, rebase, cherry-pick or branch creation right in context. Origin-independent: it works with GitHub, GitLab, Bitbucket, Gerrit or any other Git remote, and uses the Git you already have installed. No registration, no sign-in. Free to use.",
-    tags: ["Electron", "React", "TypeScript", "Free to use"],
+      "A clean, fast Git client that makes everyday version-control tasks simple and visual. The interactive graph explains history at a glance — inspect any commit and run merge, rebase, cherry-pick or branch creation right in context. Built in Electron with a TypeScript/React renderer and shipped from one codebase to Windows, macOS (Apple silicon and Intel) and Linux, with electron-builder packaging and differential auto-updates. Origin-independent: it works with GitHub, GitLab, Bitbucket, Gerrit or any other Git remote, and uses the Git you already have installed. No registration, no sign-in. Free and open source.",
+    tags: [
+      "Electron",
+      "TypeScript",
+      "React",
+      "electron-builder",
+      "Auto-update",
+      "Windows · macOS · Linux",
+    ],
     featured: true,
+  },
+  {
+    name: "Intellifriend",
+    role: "Trainee Software Engineer",
+    org: "Brainstation-23",
+    link: null,
+    linkLabel: null,
+    description:
+      "A real-time activity monitoring agent that tracks a user’s activity on a computer device (Windows, Linux, Mac) and analyzes the data to generate comprehensive productivity insight for employees. Built as an Electron desktop client with background execution and system-level capture of keyboard, mouse and application usage.",
+    tags: ["Electron.js", "JavaScript", "AngularJS", "Activity monitoring"],
+  },
+  {
+    name: "BIS",
+    role: "Senior Developer",
+    org: "BJIT",
+    link: null,
+    linkLabel: null,
+    description:
+      "Bridge Inspection System — a Windows desktop application running on engineers’ tablets in the field, managing faults of bridges and pairing captured images with detailed inspection information.",
+    tags: ["C#", "WinForms", "SQLite", "Desktop", "Field tooling"],
   },
   {
     name: "MyHome",
@@ -162,16 +193,6 @@ export const projects: Project[] = [
     description:
       "A service maintenance system for residents featuring thousands of houses and properties to rent, parking, and amenities booking with custom service management.",
     tags: ["ASP.NET Core", "MSSQL", "React", "Docker"],
-  },
-  {
-    name: "BIS",
-    role: "Senior Developer",
-    org: "BJIT",
-    link: null,
-    linkLabel: null,
-    description:
-      "Bridge Inspection System — a Windows application running on engineers’ tablets that manages faults of bridges, pairing captured images with detailed inspection information.",
-    tags: ["C#", "WinForms", "SQLite", "Field tooling"],
   },
   {
     name: "Reganalytics",
@@ -213,19 +234,10 @@ export const projects: Project[] = [
       "A supply chain workflow solution whose scalable ERP module enables automated purchase order management, real-time supplier coordination, and complete supply chain traceability.",
     tags: ["ASP.NET Core", "TypeScript", "React", "AWS", "DynamoDB"],
   },
-  {
-    name: "Intellifriend",
-    role: "Trainee Software Engineer",
-    org: "Brainstation-23",
-    link: null,
-    linkLabel: null,
-    description:
-      "A real-time activity monitoring system that tracks a user’s activity on a computer device (Windows, Linux, Mac) and analyzes the data to generate comprehensive productivity insight for employees.",
-    tags: ["ElectronJS", "AngularJS", "C#", "JavaScript"],
-  },
 ];
 
 export type SkillIcon =
+  | "appWindow"
   | "code"
   | "layers"
   | "monitor"
@@ -241,20 +253,27 @@ export type SkillGroup = { title: string; icon: SkillIcon; items: string[] };
 
 export const skillGroups: SkillGroup[] = [
   {
+    title: "Desktop & Cross-Platform",
+    icon: "appWindow",
+    items: [
+      "Electron.js",
+      "electron-builder",
+      "electron-updater (auto-update)",
+      "Main/renderer IPC",
+      "Background processes",
+      "Windows · macOS · Linux packaging",
+      "WinForms",
+    ],
+  },
+  {
     title: "Programming Languages",
     icon: "code",
-    items: ["C#", "JavaScript (TypeScript)", "Python", "C", "C++"],
+    items: ["TypeScript", "JavaScript", "C#", "Python", "C", "C++"],
   },
   {
     title: "Frameworks",
     icon: "layers",
-    items: [
-      "ASP.NET Core",
-      "ASP.NET MVC",
-      "Blazor",
-      "NodeJS (NestJS)",
-      "Electron JS",
-    ],
+    items: ["Node.js (NestJS)", "ASP.NET Core", "ASP.NET MVC", "Blazor"],
   },
   {
     title: "Front-End Technologies",
@@ -323,17 +342,18 @@ export const skillGroups: SkillGroup[] = [
 
 /** Core technologies for the marquee strip beneath the hero. */
 export const coreTech = [
+  "Electron",
+  "TypeScript",
+  "Node.js",
+  "React",
+  "Cross-platform desktop",
   "C#",
   ".NET",
   "ASP.NET Core",
   "Entity Framework",
   "Blazor",
-  "TypeScript",
-  "React",
   "Angular",
-  "Node.js",
   "NestJS",
-  "Electron",
   "MSSQL",
   "MongoDB",
   "AWS",

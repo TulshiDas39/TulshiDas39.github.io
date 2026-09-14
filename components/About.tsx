@@ -1,13 +1,13 @@
-import { Boxes, Cloud, GraduationCap, Users } from "lucide-react";
+import { AppWindow, Cloud, GraduationCap, Users } from "lucide-react";
 import { education, profile } from "@/data/resume";
 import Reveal from "./Reveal";
 import Section from "./Section";
 
 const pillars = [
   {
-    Icon: Boxes,
-    title: "Architecture that ages well",
-    body: "CQRS, domain-driven design and microservices applied where they earn their keep — not as decoration.",
+    Icon: AppWindow,
+    title: "Desktop that gets out of the way",
+    body: "One Electron codebase to Windows, macOS and Linux — packaged with electron-builder and kept current through differential auto-updates.",
   },
   {
     Icon: Cloud,

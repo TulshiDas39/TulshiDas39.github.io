@@ -43,7 +43,7 @@ export default function Hero() {
                 <span className="relative inline-flex size-2 rounded-full bg-accent" />
               </span>
               <span className="font-mono text-[11px] tracking-wide text-fg-muted">
-                Open to senior &amp; principal .NET roles
+                Open to remote senior &amp; principal roles
               </span>
             </motion.div>
 
@@ -63,10 +63,10 @@ export default function Hero() {
               transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
               className="mt-6 max-w-xl text-base leading-relaxed text-fg-muted md:text-lg"
             >
-              <span className="font-medium text-fg">{profile.role}</span> with
-              6+ years shipping enterprise platforms on ASP.NET Core, MSSQL and
-              the cloud — asset management, property portals, compliance and
-              supply-chain systems used at scale.
+              <span className="font-medium text-fg">{profile.role}</span>{" "}
+              building cross-platform desktop software in Electron.js and
+              TypeScript — backed by 6+ years shipping enterprise platforms on
+              ASP.NET Core, MSSQL and the cloud.
             </motion.p>
 
             <motion.div
@@ -193,7 +193,7 @@ export default function Hero() {
                 <span className="text-accent">AWS</span> Certified
               </div>
               <div className="panel absolute -right-6 bottom-14 rounded-xl px-3.5 py-2 font-mono text-[11px] text-fg-muted shadow-xl">
-                <span className="text-accent">6+</span> yrs .NET
+                <span className="text-accent">Electron</span> · 3 platforms
               </div>
             </div>
           </motion.div>

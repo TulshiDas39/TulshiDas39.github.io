@@ -1,4 +1,5 @@
 import {
+  AppWindow,
   Cloud,
   Code2,
   Database,
@@ -16,6 +17,7 @@ import Reveal from "./Reveal";
 import Section from "./Section";
 
 const icons: Record<SkillIcon, LucideIcon> = {
+  appWindow: AppWindow,
   code: Code2,
   layers: Layers,
   monitor: Monitor,

@@ -2,7 +2,7 @@
   "name": "tulshidas39.github.io",
   "version": "1.0.0",
   "private": true,
-  "description": "Portfolio of Tulshi Chandra Das — Principal Software Engineer (.NET)",
+  "description": "Portfolio of Tulshi Chandra Das — Principal Software Engineer, cross-platform desktop (Electron.js) and full-stack",
   "homepage": "https://tulshidas39.github.io/",
   "scripts": {
     "dev": "next dev --turbopack",

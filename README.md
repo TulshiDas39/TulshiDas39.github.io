@@ -1,6 +1,7 @@
 # tulshidas39.github.io
 
-Personal portfolio of **Tulshi Chandra Das** — Principal Software Engineer (.NET).
+Personal portfolio of **Tulshi Chandra Das** — Principal Software Engineer,
+cross-platform desktop (Electron.js) and full-stack.
 
 Live at <https://tulshidas39.github.io/>.
 
@@ -72,9 +73,9 @@ in the `profile` object.
 
 ### Résumé download
 
-The **Download résumé** buttons serve `public/assets/Tulshi_Chandra_Das_Resume.pdf`
-(a copy of `Tulshi_Chandra_Das_Resume.Net.pdf` in the repo root). To update it, drop a
-new PDF over that file — or point `profile.resumeFile` somewhere else.
+The **Download résumé** buttons serve `public/assets/Tulshi_Chandra_Das_Resume.pdf`.
+To update it, drop a new PDF over that file — or point `profile.resumeFile`
+somewhere else.
 
 ## Structure
 

@@ -120,7 +120,7 @@ export default function Projects() {
       id="projects"
       index="03"
       title="Projects"
-      lead="Ten products across asset management, property, compliance, healthcare and supply chain."
+      lead="Ten products — cross-platform desktop tooling, plus asset management, property, compliance, healthcare and supply-chain platforms."
     >
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {featured.map((project, i) => (
